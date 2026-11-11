@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cuaderno del Fogón: recetas caseras para cocinar, compartir y disfrutar cada día.">
+  <title>Cuaderno del Fogón | Recetas que se comparten</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">RECETAS, IDEAS Y MOMENTOS PARA COMPARTIR</div>
+  <header>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Cuaderno del Fogón, inicio">CUADERNO <span>DEL FOGÓN</span></a>
+      <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">☰</button>
+      <div class="nav-links" id="menu">
+        <a href="#recetas">Recetas</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#inspiracion">Inspiración</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#contacto">Comparte una receta</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow">Recetario abierto</p>
+          <h1>Recetas para cocinar y compartir</h1>
+          <p>Descubre preparaciones caseras, guarda tus favoritas y comparte tus propias ideas con la comunidad.</p>
+          <a class="button" href="#recetas">Explorar recetas</a>
+        </div>
+        <div class="hero-art" aria-label="Ilustración decorativa de un recetario digital" role="img">
+          <div class="device">
+            <div class="device-screen">
+              <div class="screen-title"></div>
+              <div class="screen-line"></div>
+              <div class="screen-line"></div>
+              <div class="screen-food"><div class="dish"></div><div class="screen-label">Cocinar<br>es compartir</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recetas">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Favoritos de la temporada</h2>
+          <p>Recetas prácticas y llenas de sabor para preparar sin complicaciones.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-image" aria-label="Ilustración de guarniciones" role="img"><div class="food-icon"></div></div>
+            <div class="card-body"><span class="tag">Para compartir</span><h3>Guarniciones para invitar</h3><p>Combinaciones sencillas que convierten cualquier comida en una ocasión especial.</p></div>
+          </article>
+          <article class="card">
+            <div class="card-image" aria-label="Ilustración de comida reconfortante" role="img"><div class="food-icon"></div></div>
+            <div class="card-body"><span class="tag">Comida reconfortante</span><h3>Comida casera al estilo del Fogón</h3><p>Platos cálidos, equilibrados y perfectos para volver a lo esencial.</p></div>
+          </article>
+          <article class="card">
+            <div class="card-image" aria-label="Ilustración de ensalada fresca" role="img"><div class="food-icon"></div></div>
+            <div class="card-body"><span class="tag">Fresco y ligero</span><h3>Ensaladas para todos los días</h3><p>Ingredientes frescos y aderezos caseros para llenar de color tu mesa.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="about-grid container">
+        <div class="about-art" aria-label="Composición abstracta de Cuaderno del Fogón" role="img"></div>
+        <div class="about-copy">
+          <p class="eyebrow">Nuestra manera de cocinar</p>
+          <h2>Un cuaderno hecho entre todos.</h2>
+          <p>Creemos que cocinar bien no tiene que ser complicado. Reunimos recetas claras, ingredientes cotidianos y pequeñas ideas para que encuentres tu propio ritmo en la cocina.</p>
+          <p>Cada receta suma una historia y una nueva forma de compartir la mesa.</p>
+          <div class="stats"><div><strong>35+</strong><span>recetas originales</span></div><div><strong>4</strong><span>temporadas al año</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inspiracion">
+      <div class="container">
+        <div class="section-heading"><h2>Encuentra tu inspiración</h2><p>Un espacio para aprender, probar y disfrutar cada paso del proceso.</p></div>
+        <div class="cards">
+          <article class="card"><div class="card-body"><span class="tag">01 · Guías</span><h3>Planifica tu semana</h3><p>Ideas para organizar tus comidas y aprovechar mejor cada ingrediente.</p></div></article>
+          <article class="card"><div class="card-body"><span class="tag">02 · Consejos</span><h3>El sabor está en los detalles</h3><p>Técnicas simples para transformar lo cotidiano en algo memorable.</p></div></article>
+          <article class="card"><div class="card-body"><span class="tag">03 · Comunidad</span><h3>Tu mesa, tus historias</h3><p>Comparte tus platos favoritos y descubre nuevas formas de cocinar.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="about">
+      <div class="contact-grid container">
+        <div class="contact-copy"><p class="eyebrow">Hablemos</p><h2>¿Qué vas a cocinar hoy?</h2><p>Déjanos tu mensaje y recibe nuevas ideas directamente en tu correo.</p></div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field"><label for="name">Nombre</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="field full"><label for="message">Mensaje</label><textarea id="message" name="message" required></textarea></div>
+          <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          <button class="button" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid container">
+      <a class="brand" href="#inicio">CUADERNO <span>DEL FOGÓN</span></a>
+      <div class="footer-links"><a href="#recetas">Recetas</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a><span>© <span id="year"></span> Cuaderno del Fogón</span></div>
+    </div>
+  </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
